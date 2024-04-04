@@ -1,0 +1,229 @@
+:root{
+    --blue:#496989; 
+    --yellow:#FCDC2A;
+    --hash:whitesmoke;
+    --green:#90D26D;
+
+}
+
+body,h2{
+    margin: 0;
+    /* padding: 0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url(images/food1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    color: var(--hash);
+}
+
+.landing a{
+    text-decoration: none ;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: var(--yellow)
+    
+
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    
+}
+
+#logo{
+    flex: 3;
+    width: 50px;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: sk;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+   
+}
+
+@keyframes sk {
+    0%{
+        color: rgb(75, 0, 128);
+        
+    }
+    50%{
+        color: darkgreen;
+    }
+    100%{
+        color: rgba(0, 166, 255, 0.779);
+    }
+    
+}
+
+nav a{
+    flex: 1;
+}
+
+header a:hover{
+    color: green;
+}
+
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.maintext div{
+    margin-top: .75em;
+    
+}
+
+.firstline{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgba(255, 166, 0, 0.559) ;
+}
+
+.secondline{
+    color: aqua;
+    font-size: 2rem;
+}
+
+.thirdline{
+    font-size: 1.5em;
+
+}
+
+button{
+   
+    /* flex-wrap: nowrap; */
+    font-size: large;
+    width: 10vw;
+    min-width: 109px;
+    height: 7vh;
+    margin-top: 0.75em;
+    border-radius: 20px;
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: ks;
+}
+
+@keyframes ks {
+    0%{
+        background-color:white;
+    }
+    
+    100%{
+        background-color: aqua;
+    }
+}
+
+
+
+.menu{
+    display: grid;
+    background-color: #7b498931;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.477),rgba(0, 0, 0, 0.477)); */
+    color:black;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    padding: 2em;
+    /* height: 900px; */
+}
+
+#menuheading{
+    background-color: #7b498931;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.477),rgba(0, 0, 0, 0.477));  */
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 0, 0, 0.667);
+    font-size: 2em;
+}
+
+#locheading{
+    /* background-color:rgba(153, 205, 50, 0.484); */
+    background-color: #7b498931;
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 0, 0, 0.667);
+    font-size: 2em;
+
+}
+
+.menu th{
+    font-size: 1.5em;
+    color: #496989;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.8em ;
+}
+
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+
+}
+
+.maincourse{
+    grid-row:span 2;
+}
+
+.locations {
+    background-color: #7b498931;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 50vh; */
+    justify-content: center;
+    align-items: center;
+    /* height: 900px; */
+}
+
+.locations h2{
+    color:#496989 ;
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 230px;
+}
+
+footer{
+    background-color:rgba(0, 0, 0, 0.199);
+    /* background-color: #6dadd265; */
+    color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    /* height: 10vh; */
+    align-items: center;
+    
+
+}
+
